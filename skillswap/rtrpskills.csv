@@ -1,0 +1,5 @@
+id,title,description,category,hours,user_id,created_at
+1,"machine learning ","i can teach machine learning with real project how to train and build",Programming,6.00,1,"2026-02-01 16:11:15"
+2,"web development","i can teach web development , like frontend and backend",Programming,6.00,2,"2026-02-01 16:16:00"
+3,"data engineer","i love to teach who to deal with data",Programming,4.00,3,"2026-02-01 16:18:10"
+4,"python developer","i can teach who do build and do things with python langauge",Programming,3.00,4,"2026-02-01 16:22:07"

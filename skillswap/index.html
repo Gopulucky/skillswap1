@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SkillSwap (RTRP) - A peer-to-peer skill exchange platform where time is the currency. Learn and teach skills without money.">
+    <title>SkillSwap (RTRP) - Real-Time Resource Pool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">SS</span>
+                <span>SkillSwap</span>
+            </a>
+            <div class="nav-links">
+                <a href="#problem">Problem</a>
+                <a href="#objectives">Objectives</a>
+                <a href="#technology">Tech Stack</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#features">Features</a>
+                <a href="#database">Database</a>
+                <a href="#results">Results</a>
+                <a href="#future">Future</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#problem">Problem</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#technology">Tech Stack</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#features">Features</a>
+        <a href="#database">Database</a>
+        <a href="#results">Results</a>
+        <a href="#future">Future</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Real-Time Resource Pool (RTRP)
+            </div>
+            <h1 class="hero-title">
+                Learn faster,<br>
+                <span class="gradient-text">swap smarter.</span>
+            </h1>
+            <p class="hero-subtitle">
+                A peer-to-peer skill exchange platform where <strong>time is the currency</strong>.
+                Trade your expertise for new knowledge — no money required.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-value">1hr</span>
+                    <span class="stat-label">Teaching = Credits</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value">P2P</span>
+                    <span class="stat-label">Direct Exchange</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value">$0</span>
+                    <span class="stat-label">Cost to Learn</span>
+                </div>
+            </div>
+            <a href="#problem" class="cta-button">
+                Explore Project
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Abstract / Introduction -->
+    <section class="section section-dark" id="abstract">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-label">Introduction</span>
+                <h2 class="section-title">Abstract</h2>
+            </div>
+            <div class="abstract-content">
+                <p>
+                    <strong>SkillSwap</strong> (Real-Time Resource Pool) is an innovative web-based platform designed to
+                    democratize education through peer-to-peer skill exchange. The platform implements a unique
+                    <strong>time-based economy</strong> where users earn credits by teaching and spend them to learn,
+                    eliminating financial barriers to quality education.
+                </p>
+                <p>
+                    Built using modern full-stack technologies including <strong>React 19</strong>,
+                    <strong>Node.js</strong>,
+                    <strong>Express.js</strong>, and <strong>MySQL</strong>, the application features secure JWT
+                    authentication,
+                    real-time messaging, user profiles with skill portfolios, and an intuitive responsive interface.
+                </p>
+                <p>
+                    This project demonstrates the viability of community-driven learning platforms and provides a
+                    foundation for future enhancements including video calling, AI-based skill matching, and mobile
+                    applications.
+                </p>
+            </div>
+            <div class="presenters-section">
+                <h3>Presented By</h3>
+                <div class="presenters-grid">
+                    <div class="presenter">
+                        <span class="presenter-name">Gopu Hardik</span>
+                        <span class="presenter-id">24281A6710</span>
+                    </div>
+                    <div class="presenter">
+                        <span class="presenter-name">Muddam Sreeja</span>
+                        <span class="presenter-id">24281A6715</span>
+                    </div>
+                    <div class="presenter">
+                        <span class="presenter-name">Kolluri Srigandha</span>
+                        <span class="presenter-id">24281A6727</span>
+                    </div>
+                    <div class="presenter">
+                        <span class="presenter-name">MD. Mehtab Ali</span>
+                        <span class="presenter-id">25285A6701</span>
+                    </div>
+                </div>
+            </div>
+            <div class="presenters-section" style="margin-top: 48px;">
+                <h3>Guided By</h3>
+                <div class="presenters-grid">
+                    <div class="presenter">
+                        <span class="presenter-name">K. Praveen Kumar Rao</span>
+                        <span class="presenter-id">Project Guide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="section" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Challenge</span>
+                <h2 class="section-title">Problem Statement</h2>
+                <p class="section-subtitle">Understanding the barriers to accessible education</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card" style="--accent: #FF6B6B">
+                    <div class="problem-number">01</div>
+                    <h3>High Cost of Education</h3>
+                    <p>Professional tutoring and courses are expensive. Quality learning is often inaccessible to those
+                        with budget constraints.</p>
+                </div>
+                <div class="problem-card" style="--accent: #4ECDC4">
+                    <div class="problem-number">02</div>
+                    <h3>One-Way Learning</h3>
+                    <p>Traditional platforms are consumption-based videos, lacking interactive feedback and personal
+                        connection with instructors.</p>
+                </div>
+                <div class="problem-card" style="--accent: #0d9488">
+                    <div class="problem-number">03</div>
+                    <h3>Undervalued Skills</h3>
+                    <p>Many people have valuable skills in cooking, coding, music, art — but no easy platform to share
+                        them for return value.</p>
+                </div>
+                <div class="problem-card" style="--accent: #F59E0B">
+                    <div class="problem-number">04</div>
+                    <h3>Lack of Community</h3>
+                    <p>It's challenging to find a dedicated learning partner for mutual growth and knowledge exchange.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives -->
+    <section class="section section-dark" id="objectives">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-label">Our Mission</span>
+                <h2 class="section-title">Project Objectives</h2>
+                <p class="section-subtitle">Building a democratized learning ecosystem</p>
+            </div>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="objective-number">01</div>
+                    <div class="objective-content">
+                        <h3>Time-Based Economy</h3>
+                        <p>Create a system where 1 hour of teaching equals 1 hour of learning credit. Fair, transparent,
+                            and accessible to all.</p>
+                    </div>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-number">02</div>
+                    <div class="objective-content">
+                        <h3>Peer-to-Peer Connection</h3>
+                        <p>Enable users to find others based on specific skills they want to learn or teach. Direct
+                            connections, no intermediaries.</p>
+                    </div>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-number">03</div>
+                    <div class="objective-content">
+                        <h3>Real-Time Interaction</h3>
+                        <p>Provide chat and video capabilities for seamless communication between users during skill
+                            exchange sessions.</p>
+                    </div>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-number">04</div>
+                    <div class="objective-content">
+                        <h3>User-Friendly Interface</h3>
+                        <p>Build a responsive, modern web application for easy navigation across all devices and screen
+                            sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Tech Stack</span>
+                <h2 class="section-title">Technologies Used</h2>
+                <p class="section-subtitle">Modern full-stack web development</p>
+            </div>
+            <div class="tech-stack">
+                <div class="tech-category">
+                    <h3 class="tech-category-title">
+                        <span class="category-label">FE</span>
+                        Frontend
+                    </h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">R</div>
+                            <div class="tech-info">
+                                <h4>React 19</h4>
+                                <p>Component-based UI library</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">V</div>
+                            <div class="tech-info">
+                                <h4>Vite</h4>
+                                <p>Fast build tool &amp; dev server</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">T</div>
+                            <div class="tech-info">
+                                <h4>Tailwind CSS 4</h4>
+                                <p>Utility-first styling</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">RR</div>
+                            <div class="tech-info">
+                                <h4>React Router 7</h4>
+                                <p>Client-side navigation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title">
+                        <span class="category-label">BE</span>
+                        Backend
+                    </h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">N</div>
+                            <div class="tech-info">
+                                <h4>Node.js</h4>
+                                <p>JavaScript runtime</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">E</div>
+                            <div class="tech-info">
+                                <h4>Express.js 5</h4>
+                                <p>Web framework</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">JWT</div>
+                            <div class="tech-info">
+                                <h4>JWT + bcrypt</h4>
+                                <p>Secure authentication</p>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">SQL</div>
+                            <div class="tech-info">
+                                <h4>MySQL</h4>
+                                <p>Relational database</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="methodology-box">
+                    <h3>Development Methodology</h3>
+                    <div class="sprints">
+                        <div class="sprint">
+                            <span class="sprint-num">Sprint 1</span>
+                            <span class="sprint-text">Backend API Development</span>
+                        </div>
+                        <div class="sprint-arrow">→</div>
+                        <div class="sprint">
+                            <span class="sprint-num">Sprint 2</span>
+                            <span class="sprint-text">Frontend UI Development</span>
+                        </div>
+                        <div class="sprint-arrow">→</div>
+                        <div class="sprint">
+                            <span class="sprint-num">Sprint 3</span>
+                            <span class="sprint-text">Integration & Testing</span>
+                        </div>
+                        <div class="sprint-arrow">→</div>
+                        <div class="sprint">
+                            <span class="sprint-num">Sprint 4</span>
+                            <span class="sprint-text">Polish & Deployment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="requirements-grid">
+                    <div class="requirements-box">
+                        <h3>Frontend Requirements</h3>
+                        <div class="requirements-list">
+                            <div class="requirement-item">
+                                <span class="req-label">Node.js</span>
+                                <span class="req-value">v18.0 or higher</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">npm</span>
+                                <span class="req-value">v9.0 or higher</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">Vite</span>
+                                <span class="req-value">v5.0+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="requirements-box">
+                        <h3>Backend Requirements</h3>
+                        <div class="requirements-list">
+                            <div class="requirement-item">
+                                <span class="req-label">Node.js</span>
+                                <span class="req-value">v18.0 or higher</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">MySQL Server</span>
+                                <span class="req-value">v8.0 or higher</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-label">MySQL Workbench</span>
+                                <span class="req-value">For database management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- System Architecture -->
+    <section class="section section-dark" id="architecture">
+        <div class="container container-wide">
+            <div class="section-header light">
+                <span class="section-label">System Design</span>
+                <h2 class="section-title">Architecture Overview</h2>
+                <p class="section-subtitle">How the pieces fit together</p>
+            </div>
+
+            <!-- System Architecture Map - Full Width -->
+            <div class="full-width-diagram">
+                <h3>System Architecture</h3>
+                <p>Complete system architecture showing all components and their interactions</p>
+                <div class="diagram-wrapper-large">
+                    <img src="systemmap.png" alt="System Architecture Map" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Process Flowchart - Full Width -->
+            <div class="full-width-diagram">
+                <h3>Process Flowchart</h3>
+                <p>Step-by-step application flow from user registration to skill exchange</p>
+                <div class="diagram-wrapper-large">
+                    <img src="flowChart.png" alt="Process Flowchart" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Showcase -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Application</span>
+                <h2 class="section-title">Features & Screenshots</h2>
+                <p class="section-subtitle">Explore the SkillSwap user interface</p>
+            </div>
+            <div class="features-showcase">
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="DASHBORD.png" alt="Dashboard" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Dashboard</h3>
+                        <p>Community overview with statistics, time credit balance, featured skills, and new member
+                            discovery. Your central hub for skill exchange.</p>
+                        <ul class="feature-list">
+                            <li>Live member count & online status</li>
+                            <li>Time credits wallet display</li>
+                            <li>Category-based skill filtering</li>
+                            <li>Search functionality</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-item reverse">
+                    <div class="feature-image">
+                        <img src="BROWSESKILLS.png" alt="Browse Skills" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Browse Skills</h3>
+                        <p>Explore all available skills from the community. Filter by categories like Programming,
+                            Music, Design, Academic, and Language.</p>
+                        <ul class="feature-list">
+                            <li>Grid view of skill cards</li>
+                            <li>Category filter pills</li>
+                            <li>Skill owner information</li>
+                            <li>Direct chat/video options</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="BROWSEMEMBERS.png" alt="Browse Members" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Browse Members</h3>
+                        <p>Discover community members with their expertise areas and real-time online status indicators.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Member profiles with avatars</li>
+                            <li>Role/expertise display</li>
+                            <li>Online/offline indicators</li>
+                            <li>Quick connect options</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-item reverse">
+                    <div class="feature-image">
+                        <img src="MYSILLS.png" alt="My Skills" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>My Skills</h3>
+                        <p>Manage your skill portfolio. Create new offerings, edit existing ones, or remove skills you
+                            no longer offer.</p>
+                        <ul class="feature-list">
+                            <li>Add skills with title & description</li>
+                            <li>Set category & time value</li>
+                            <li>Edit or delete your skills</li>
+                            <li>Track teaching activity</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="PROFILE.png" alt="Profile" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>User Profile</h3>
+                        <p>Comprehensive profile with bio, role, location, and all your listed skills. Powered by
+                            DiceBear for unique avatars.</p>
+                        <ul class="feature-list">
+                            <li>Customizable profile info</li>
+                            <li>Auto-generated avatars</li>
+                            <li>Skills portfolio view</li>
+                            <li>Time credits balance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-item reverse">
+                    <div class="feature-image">
+                        <img src="MESSAGES.png" alt="Messages" loading="lazy">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Messaging System</h3>
+                        <p>Real-time chat for coordinating skill exchanges. All messages persist in the database for
+                            conversation history.</p>
+                        <ul class="feature-list">
+                            <li>Persistent message history</li>
+                            <li>Real-time message delivery</li>
+                            <li>Conversation threads</li>
+                            <li>Video call integration (UI ready)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Database Design -->
+    <section class="section section-dark" id="database">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-label">Data Layer</span>
+                <h2 class="section-title">Database Design</h2>
+                <p class="section-subtitle">MySQL schema and relationships</p>
+            </div>
+            <div class="database-diagram">
+                <img src="database.png" alt="Database Architecture" loading="lazy">
+            </div>
+            <div class="tables-grid">
+                <div class="table-card">
+                    <h3>Users Table</h3>
+                    <div class="table-fields">
+                        <div class="field"><code>id</code> <span>INT, PK, Auto Increment</span></div>
+                        <div class="field"><code>username</code> <span>VARCHAR, Unique</span></div>
+                        <div class="field"><code>email</code> <span>VARCHAR, Unique</span></div>
+                        <div class="field"><code>password</code> <span>VARCHAR, bcrypt hashed</span></div>
+                        <div class="field"><code>avatar</code> <span>TEXT, Profile image URL</span></div>
+                        <div class="field"><code>timeCredits</code> <span>INT, Default: 10</span></div>
+                        <div class="field"><code>bio</code> <span>TEXT, User biography</span></div>
+                        <div class="field"><code>role</code> <span>VARCHAR, Job title</span></div>
+                        <div class="field"><code>is_online</code> <span>BOOLEAN, Status tracking</span></div>
+                    </div>
+                </div>
+                <div class="table-card">
+                    <h3>Skills Table</h3>
+                    <div class="table-fields">
+                        <div class="field"><code>id</code> <span>INT, PK, Auto Increment</span></div>
+                        <div class="field"><code>title</code> <span>VARCHAR, Skill name</span></div>
+                        <div class="field"><code>description</code> <span>TEXT, Details</span></div>
+                        <div class="field"><code>category</code> <span>VARCHAR, Classification</span></div>
+                        <div class="field"><code>hours</code> <span>DECIMAL, Credit value</span></div>
+                        <div class="field"><code>user_id</code> <span>INT, FK → Users</span></div>
+                        <div class="field"><code>created_at</code> <span>TIMESTAMP</span></div>
+                    </div>
+                </div>
+                <div class="table-card">
+                    <h3>Messages Table</h3>
+                    <div class="table-fields">
+                        <div class="field"><code>id</code> <span>INT, PK, Auto Increment</span></div>
+                        <div class="field"><code>sender_id</code> <span>INT, FK → Users</span></div>
+                        <div class="field"><code>receiver_id</code> <span>INT, FK → Users</span></div>
+                        <div class="field"><code>text</code> <span>TEXT, Message content</span></div>
+                        <div class="field"><code>created_at</code> <span>TIMESTAMP</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="relationships-box">
+                <h3>Entity Relationships</h3>
+                <div class="relationships">
+                    <div class="relationship">
+                        <span class="entity">Users</span>
+                        <span class="arrow">→</span>
+                        <span class="type">One-to-Many</span>
+                        <span class="arrow">→</span>
+                        <span class="entity">Skills</span>
+                    </div>
+                    <div class="relationship">
+                        <span class="entity">Users</span>
+                        <span class="arrow">→</span>
+                        <span class="type">One-to-Many</span>
+                        <span class="arrow">→</span>
+                        <span class="entity">Messages (sender)</span>
+                    </div>
+                    <div class="relationship">
+                        <span class="entity">Users</span>
+                        <span class="arrow">→</span>
+                        <span class="type">One-to-Many</span>
+                        <span class="arrow">→</span>
+                        <span class="entity">Messages (receiver)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing & Results -->
+    <section class="section" id="results">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Validation</span>
+                <h2 class="section-title">Testing & Results</h2>
+                <p class="section-subtitle">Verifying implementation success</p>
+            </div>
+            <div class="results-grid">
+                <div class="results-stats">
+                    <h3>Platform Statistics</h3>
+                    <div class="stats-cards">
+                        <div class="stats-card">
+                            <span class="stats-value">4</span>
+                            <span class="stats-label">Registered Users</span>
+                        </div>
+                        <div class="stats-card">
+                            <span class="stats-value">4</span>
+                            <span class="stats-label">Skills Listed</span>
+                        </div>
+                        <div class="stats-card">
+                            <span class="stats-value">7</span>
+                            <span class="stats-label">Messages Exchanged</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="implementation-status">
+                    <h3>Implementation Status</h3>
+                    <div class="status-list">
+                        <div class="status-item complete">
+                            <span class="status-icon">✓</span>
+                            <span>User Authentication (JWT + bcrypt)</span>
+                        </div>
+                        <div class="status-item complete">
+                            <span class="status-icon">✓</span>
+                            <span>Skill CRUD Operations</span>
+                        </div>
+                        <div class="status-item complete">
+                            <span class="status-icon">✓</span>
+                            <span>Browse & Filter Skills</span>
+                        </div>
+                        <div class="status-item complete">
+                            <span class="status-icon">✓</span>
+                            <span>Chat Messaging System</span>
+                        </div>
+                        <div class="status-item complete">
+                            <span class="status-icon">✓</span>
+                            <span>User Profiles</span>
+                        </div>
+                        <div class="status-item complete">
+                            <span class="status-icon">✓</span>
+                            <span>Online Status Tracking</span>
+                        </div>
+                        <div class="status-item partial">
+                            <span class="status-icon">△</span>
+                            <span>Video Calls (UI Ready, WebRTC pending)</span>
+                        </div>
+                        <div class="status-item planned">
+                            <span class="status-icon">○</span>
+                            <span>Rating System (Planned)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testing-methods">
+                <h3>Testing Strategy</h3>
+                <div class="methods-grid">
+                    <div class="method">
+                        <div class="method-number">01</div>
+                        <h4>API Testing</h4>
+                        <p>Tested individual endpoints using browser dev tools and Postman</p>
+                    </div>
+                    <div class="method">
+                        <div class="method-number">02</div>
+                        <h4>Integration Testing</h4>
+                        <p>Verified Frontend correctly displays data from Backend API</p>
+                    </div>
+                    <div class="method">
+                        <div class="method-number">03</div>
+                        <h4>Cross-Browser Testing</h4>
+                        <p>Checked UI consistency on Chrome, Edge, and Firefox</p>
+                    </div>
+                    <div class="method">
+                        <div class="method-number">04</div>
+                        <h4>Database Testing</h4>
+                        <p>Verified data persistence in MySQL Workbench</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Database Proof Section -->
+            <div class="database-proof">
+                <h3>Database Records (Proof of Working Data)</h3>
+                <div class="proof-tables">
+                    <div class="proof-table">
+                        <h4>Users Table (4 Records)</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>Role</th>
+                                    <th>Credits</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Gopu Hardik</td>
+                                    <td>Machine Learning</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mehtab Ali</td>
+                                    <td>Web Development</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Muddam Sreeja</td>
+                                    <td>Data Engineering</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Kolluri Srigandha</td>
+                                    <td>Python Programmer</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="proof-table">
+                        <h4>Skills Table (4 Records)</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Machine Learning</td>
+                                    <td>Programming</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Web Development</td>
+                                    <td>Programming</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Data Engineer</td>
+                                    <td>Programming</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Python Developer</td>
+                                    <td>Programming</td>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="proof-table">
+                        <h4>Messages Table (7 Records)</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Message</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Sreeja</td>
+                                    <td>Hardik</td>
+                                    <td>hi</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Srigandha</td>
+                                    <td>Sreeja</td>
+                                    <td>hi, sreeja</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Hardik</td>
+                                    <td>Mehtab</td>
+                                    <td>hlo mehtab ali</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Hardik</td>
+                                    <td>Srigandha</td>
+                                    <td>hi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Scope -->
+    <section class="section section-gradient" id="future">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-label">Roadmap</span>
+                <h2 class="section-title">Future Enhancements</h2>
+                <p class="section-subtitle">What's coming next</p>
+            </div>
+            <div class="future-grid">
+                <div class="future-card">
+                    <div class="future-number">01</div>
+                    <h3>Video Call Integration</h3>
+                    <p>WebRTC-based in-app video conferencing for live skill sessions</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-number">02</div>
+                    <h3>Rating &amp; Review System</h3>
+                    <p>Allow learners to rate teachers and provide feedback</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-number">03</div>
+                    <h3>AI Skill Matching</h3>
+                    <p>Intelligent recommendations based on user preferences</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-number">04</div>
+                    <h3>Push Notifications</h3>
+                    <p>Real-time alerts for messages and skill requests</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-number">05</div>
+                    <h3>Mobile Application</h3>
+                    <p>React Native version for iOS and Android platforms</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-number">06</div>
+                    <h3>Premium Features</h3>
+                    <p>Optional paid skills for professional instructors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="section" id="conclusion">
+        <div class="container">
+            <div class="conclusion-content">
+                <h2>Conclusion</h2>
+                <p class="conclusion-text">
+                    <strong>SkillSwap</strong> serves as a fully functional proof-of-concept for a demonetized,
+                    community-driven education platform. It successfully implements full-stack web development
+                    (React + Node.js + MySQL) with secure JWT authentication, real-time features (chat, online status),
+                    and modern responsive UI design.
+                </p>
+                <p class="conclusion-text">
+                    The platform demonstrates the viability of peer-to-peer learning through time banking,
+                    providing a foundation for future expansion into a production-ready application.
+                </p>
+                <div class="tech-summary">
+                    <div class="tech-badge">✓ React 19 + Vite</div>
+                    <div class="tech-badge">✓ Node.js + Express 5</div>
+                    <div class="tech-badge">✓ MySQL Database</div>
+                    <div class="tech-badge">✓ JWT Authentication</div>
+                    <div class="tech-badge">✓ Real-Time Chat</div>
+                    <div class="tech-badge">✓ Responsive Design</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">SS</span>
+                    <span>SkillSwap (RTRP)</span>
+                </div>
+                <div class="footer-links">
+                    <h4>References</h4>
+                    <ul>
+                        <li><a href="https://react.dev" target="_blank">React Documentation</a></li>
+                        <li><a href="https://nodejs.org" target="_blank">Node.js</a></li>
+                        <li><a href="https://expressjs.com" target="_blank">Express.js</a></li>
+                        <li><a href="https://dev.mysql.com" target="_blank">MySQL</a></li>
+                        <li><a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a></li>
+                        <li><a href="https://jwt.io" target="_blank">JSON Web Tokens</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Real-Time Resource Pool (RTRP) Project Presentation</p>
+                <p class="thank-you">Thank You! 🙏</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        navToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.problem-card, .objective-card, .tech-item, .feature-item, .table-card, .future-card, .method, .status-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

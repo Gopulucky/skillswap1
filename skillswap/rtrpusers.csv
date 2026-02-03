@@ -1,0 +1,6 @@
+id,username,email,password,avatar,timeCredits,bio,role,location,website,created_at,is_online,last_seen
+1,"gopu hardik",gopuhardik@gmail.com,$2b$10$mXophgXe7R6l82I7ewhg2..AztKlSVcY9Ytpf2tHX4buSha3ytBiW,https://api.dicebear.com/7.x/notionists/svg?seed=o2tw7&backgroundColor=e9d5ff,10,"i love to build and train   LLM   
+","Machine learning",india,,"2026-02-01 16:09:58",1,"2026-02-01 16:23:57"
+2,"mehtab ali",mehtabali@gmail.com,$2b$10$Y8UaqpLSkgEoj7QrM3ZSnOLAiFDCMe9IfAhBZFgVvJmUMSKYqw2mG,https://api.dicebear.com/7.x/notionists/svg?seed=829job&backgroundColor=e9d5ff,10,"i love develop websites","web development",india,,"2026-02-01 16:12:50",0,"2026-02-01 16:12:50"
+3,"Muddam sreeja",muddamsreeja18@gmail.com,$2b$10$ee8/7sJrroendiLLMvF06O.sRzPgmrXf/Z5O0kVNVwTjdESHkAUo6,https://api.dicebear.com/7.x/notionists/svg?seed=x16ilq&backgroundColor=e9d5ff,10,"l love to explore and analysis the data","data engineering",india,,"2026-02-01 16:16:30",0,"2026-02-01 16:16:30"
+4,"Korulluri srigandha",korullurisrigandha@gmail.com,$2b$10$jBkBNm6KOR.wQPJ5R4ctj.mtfaLoGDq1pt9SG0.SNqjRXIVOBnaGW,https://api.dicebear.com/7.x/notionists/svg?seed=zv8khd&backgroundColor=e9d5ff,10,"l love to do programming","python programmer",india,,"2026-02-01 16:20:29",0,"2026-02-01 16:20:29"
