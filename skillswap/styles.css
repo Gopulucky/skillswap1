@@ -1318,6 +1318,20 @@ ul {
     }
 }
 
+@media (max-width: 768px) {
+
+    .feature-item,
+    .feature-item.reverse {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .feature-image {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 /* ============================================
    Database Section
    ============================================ */
@@ -1980,6 +1994,11 @@ ul {
 
     .stat-divider {
         display: none;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 24px;
     }
 
     .architecture-grid {
