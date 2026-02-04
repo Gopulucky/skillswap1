@@ -2079,3 +2079,34 @@ ul {
         padding: 20px;
     }
 }
+
+/* Hidden Sections - User Request */
+#results,
+#features,
+#future {
+    display: none !important;
+}
+
+/* Database Diagram Large */
+.database-diagram {
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+}
+
+.database-diagram img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base);
+}
+
+.database-diagram img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
