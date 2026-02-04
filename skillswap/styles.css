@@ -679,6 +679,41 @@ ul {
 /* ============================================
    Problem Statement Section
    ============================================ */
+.hero .presenters-section {
+    margin-top: 60px;
+}
+
+.hero .presenters-section+.presenters-section {
+    margin-top: 32px;
+}
+
+.hero .presenters-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.hero .presenter {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 12px 24px;
+}
+
+.hero .presenter:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.hero .presenters-grid {
+    gap: 16px;
+}
+
 .problems-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
